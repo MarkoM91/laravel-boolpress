@@ -23,24 +23,24 @@ class HomeController extends Controller
     $title = $request -> title;
     $content = $request -> content;
     $category = $request -> category;
-    $title = $request -> author;
+    $author = $request -> author;
 
     $query = Post::query();
 
     if ($title) {
 
-      $query = $query -> where('title'. 'LIKE'. '%'. $title. '%');
+      $query = $query -> where('title', 'LIKE', '%'. $title. '%');
     }
     if ($content) {
 
-      $query = $query -> where('content'. 'LIKE'. '%'. $content. '%');
+      $query = $query -> where('content', 'LIKE', '%'. $content. '%');
     }
     if ($author) {
 
-      $query = $query -> where('author'. 'LIKE'. '%'. $author. '%');
+      $query = $query -> where('author_id',  $author);
     }
 
-    $posts = $query::get();
+    $posts = $query -> get();
 
     $categories = Category::all();
     $authors = Author::all();
