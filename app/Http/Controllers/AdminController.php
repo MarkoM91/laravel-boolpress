@@ -12,8 +12,6 @@ class AdminController extends Controller
 
       function createNewPost() {
 
-        dd(-1);
-
         $categories = Category::all();
 
         return view('page.new-post', compact('categories'));

@@ -5,7 +5,7 @@
 
       <div class="show">
         <a href="{{ route('create.new.post') }}">CREATE NEW POST</a>
-        <form class="" action="index.html" method="get">
+        <form action="{{ route('search') }}" method="get">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" name="title" value="">
@@ -28,6 +28,7 @@
             <div class="form-group">
                 <label for="author">Author</label>
                 <select class="" name="author">
+                  <option value="">choose category</option>
                   @foreach ($authors as $author)
                     <option value="{{ $author->id }}">
                      {{ $author-> username }}
@@ -35,7 +36,8 @@
                   @endforeach
                 </select>
             </div>
-        </form>
+            <input type="submit" name="" value="SEARCH">
+          </form>
         <table border="1">
           <thead>
             <td>TITLE</td>
