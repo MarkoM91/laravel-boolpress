@@ -54,7 +54,7 @@
                   </a>
                 @endforeach
                 </td>
-                <td>{{ $post-> authors -> username }}</td>
+                <td>{{ $post-> author -> username }}</td>
                 <td>{{ $post->updated_at }}</td>
                 <td><a href="{{ route('edit.post', $post->id) }}"><i class="fa fa-edit"></i></a></td>
               </tr>
