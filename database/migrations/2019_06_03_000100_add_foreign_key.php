@@ -13,15 +13,17 @@ class AddForeignKey extends Migration
      */
     public function up()
     {
-      $table->foreign('category_id', 'category')
-            ->references('id')
-            ->on('categories')
-            ->onDelete('cascade');
-      $table->foreign('post_id', 'post')
-            ->references('id')
-            ->on('posts')
-            ->onDelete('cascade');
-    });
+      schema::table('category_post', function(Blueprint $table) {
+
+        $table->foreign('category_id', 'category')
+              ->references('id')
+              ->on('categories')
+              ->onDelete('cascade');
+        $table->foreign('post_id', 'post')
+              ->references('id')
+              ->on('posts')
+              ->onDelete('cascade');
+      });
     }
 
     /**
