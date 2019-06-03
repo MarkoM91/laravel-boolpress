@@ -15,4 +15,9 @@ class Post extends Model
 
     return $this->belongsToMany(Category::class);
   }
+
+  function authors() {
+
+    return $this->belongsTo(Author::class);
+  }
 }
