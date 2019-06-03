@@ -5,10 +5,42 @@
 
       <div class="show">
         <a href="{{ route('create.new.post') }}">CREATE NEW POST</a>
+        <form class="" action="index.html" method="get">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" value="">
+            </div>
+            <div class="form-group">
+                <label for="content">Content</label>
+                <input type="text" name="content" value="">
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select class="" name="category">
+                  <option value="">choose category</option>
+                  @foreach ($categories as $category)
+                    <option value="{{ $category->id }}">
+                     {{ $category-> name }}
+                    </option>
+                  @endforeach
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <select class="" name="author">
+                  @foreach ($authors as $author)
+                    <option value="{{ $author->id }}">
+                     {{ $author-> username }}
+                    </option>
+                  @endforeach
+                </select>
+            </div>
+        </form>
         <table border="1">
           <thead>
             <td>TITLE</td>
             <td>CATEGORIES</td>
+            <td>AUTHOR</td>
             <td>UPDATED AT</td>
           </thead>
           <tbody>
@@ -22,6 +54,7 @@
                   </a>
                 @endforeach
                 </td>
+                <td>{{ $post-> authors -> username }}</td>
                 <td>{{ $post->updated_at }}</td>
                 <td><a href="{{ route('edit.post', $post->id) }}"><i class="fa fa-edit"></i></a></td>
               </tr>

@@ -17,3 +17,4 @@ Route::get('admin/post/new', 'AdminController@createNewPost')->name('create.new.
 Route::post('admin/post/new', 'AdminController@saveNewPost')->name('save.new.post');
 Route::get('admin/post/edit/{id}', 'PostController@editPost')->name('edit.post');
 Route::patch('admin/post/edit/{id}', 'PostController@updatePost')->name('update.post');
+Route::get('/search', 'HomeController@search')->name('search');
