@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <div class="edit">
+  {{-- <div class="edit">
       <h1>CREATE NEW POST</h1>
       <form method="post" action="{{ route('save.new.post') }}">
         @csrf
@@ -24,5 +24,5 @@
         </div>
         <button type="submit" name="SAVE NEW CAR">SAVE NEW post</button>
       </form>
-  </div>
+  </div> --}}
 @stop
