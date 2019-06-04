@@ -13729,25 +13729,24 @@ header {
 
 table {
   margin: auto;
+  background: white;
+  border: 1px solid white;
 }
 
 table td {
-  color: black;
-  border-bottom: 1px solid rgba(0, 8, 3, 0.24);
-  padding: 0 20px;
+  border-bottom: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 0 40px;
 }
 
 table td a {
   text-decoration: none;
+  color: black;
 }
 
 .show {
   text-align: center;
   margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
 }
 
 #author_search {
@@ -13755,6 +13754,9 @@ table td a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 50px;
+  left: 100px;
 }
 
 #create_new_post {
@@ -13765,11 +13767,6 @@ table td a {
   background: #078222;
   text-decoration: none;
   color: white;
-}
-
-table {
-  border: 1px solid rgba(0, 8, 3, 0.24);
-  background: white;
 }
 
 div.form-group {

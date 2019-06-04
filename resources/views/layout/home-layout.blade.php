@@ -23,7 +23,7 @@
         </header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2  mx-auto">
+                <div class="col-lg-8 col-lg-offset-2 ">
                     @yield('content')
                     @if ($errors->any())
 

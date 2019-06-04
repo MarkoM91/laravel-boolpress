@@ -3,8 +3,9 @@
 @section('content')
 
   <div class="edit">
-      <h1>CREATE NEW POST</h1>
+        <h1>CREATE NEW POST</h1>
       <form method="post" action="{{ route('save.new.post') }}">
+
         @csrf
         @method('POST')
         <div>
