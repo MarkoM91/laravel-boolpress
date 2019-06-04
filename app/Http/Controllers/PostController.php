@@ -23,15 +23,15 @@ class PostController extends Controller
 
     $validatedData = $request->validated();
 
-    $post = Post::findOrFail($id)->update($validatedData);
+    $post = Post::findOrFail($id);
+    $post->update($validatedData);
 
-    $authorId = $validatedData['author_id'];
-    $author = author::find($authorId);
+
 
     $categoriesId = $validatedData['categories'];
     $categories = Category::find($categoriesId);
 
-    $post -> author() -> associate($author);
+
     $post -> categories() -> attach($categories);
     return redirect('/');
   }

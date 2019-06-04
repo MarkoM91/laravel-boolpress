@@ -16,7 +16,7 @@
           <input type="text" name="content" value="">
         </div>
         <div>
-          <label for="author_id"><h2>Author</h2></label>
+          <label for="author_id">Author</label>
           <select class="" name="author_id">
             @foreach ($authors as $author)
               <option value="{{$author->id}}">{{$author->username}}</option>
