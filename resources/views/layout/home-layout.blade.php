@@ -9,10 +9,20 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-      <header>
-        <h1>Laravel Blog Header</h1>
-        </a>
-      </header>
+
+        <header class="intro-header text-center mx-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="site-heading">
+                            <h1>Il Blog di Marko</h1>
+                            <hr class="small">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
       @yield('content')
 
       @if ($errors->any())
@@ -32,9 +42,7 @@
             </div>
         </div>
         @endif
-      <footer>
-          <h1>Laravel Blog Footer</h1>
-      </footer>
+
 
     </body>
 </html>

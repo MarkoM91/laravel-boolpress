@@ -5,6 +5,8 @@
 @import 'variables';
 
 // Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
 
 @import "node_modules/font-awesome/scss/font-awesome.scss";
 
@@ -30,8 +32,35 @@
   .show {
 
     text-align: center;
+    margin-top: 50px;
   }
 
+  #author_search {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #create_new_post {
+
+    border-radius: 5px;
+    padding: 15px;
+    background: lightblue;
+    text-decoration: none;
+    color: white;
+  }
+
+div.form-group {
+
+  margin: 15px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  text-align: left;
+
+}
    i {
 
     height: 100%;
@@ -39,11 +68,4 @@
 
     background: red;
     color: white;
-  }
-
-  footer {
-
-    background: blue;
-    color: white;
-    text-align: center;
   }

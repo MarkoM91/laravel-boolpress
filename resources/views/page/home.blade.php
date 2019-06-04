@@ -4,8 +4,8 @@
 
 
       <div class="show">
-        <a href="{{ route('create.new.post') }}">CREATE NEW POST</a>
-        <form action="{{ route('search') }}" method="get">
+        <a id="create_new_post" href="{{ route('create.new.post') }}">CREATE NEW POST</a>
+        <form id="author_search" action="{{ route('search') }}" method="get">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" name="title" value="">
