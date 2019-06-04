@@ -10,21 +10,24 @@
     </head>
     <body>
 
-        <header class="intro-header text-center mx-auto">
+        <header class="header text-center mx-auto">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="site-heading">
+                    <div class="col-lg-8 col-lg-offset-2  mx-auto">
+                        <div class="site-heading mx-auto">
                             <h1>Il Blog di Marko</h1>
-                            <hr class="small">
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-
-      @yield('content')
-
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2  mx-auto">
+                    @yield('content')
+                </div>
+            </div>
+        </div>
       @if ($errors->any())
 
         <div class="alert alert-danger">
@@ -42,6 +45,8 @@
             </div>
         </div>
         @endif
+        <hr />
+      </div>
 
 
     </body>
