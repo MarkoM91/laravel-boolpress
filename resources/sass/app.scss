@@ -30,6 +30,8 @@ table {
     td {
 
       color: black;
+      border-bottom: 1px solid rgba(0, 8, 3, 0.24);
+      padding:0 20px;
       a {
 
         text-decoration: none;
@@ -42,10 +44,11 @@ table {
 .show {
 
     text-align: center;
-    margin-top: 75px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 #author_search {
@@ -54,7 +57,7 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
 
 #create_new_post {
 
@@ -70,6 +73,7 @@ table {
 table {
 
     border:1px solid rgba(0, 8, 3, 0.24);
+    background: white;
 }
 
 div.form-group {
@@ -89,7 +93,9 @@ div.form-group {
 
     height: 100%;
     width: 100%;
-    padding: 20px;
+
+    padding: 10px;
     background: red;
     color: white;
+    font-size: 30px;
 }

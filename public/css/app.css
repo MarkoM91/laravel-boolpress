@@ -13733,6 +13733,8 @@ table {
 
 table td {
   color: black;
+  border-bottom: 1px solid rgba(0, 8, 3, 0.24);
+  padding: 0 20px;
 }
 
 table td a {
@@ -13741,10 +13743,11 @@ table td a {
 
 .show {
   text-align: center;
-  margin-top: 75px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 #author_search {
@@ -13766,6 +13769,7 @@ table td a {
 
 table {
   border: 1px solid rgba(0, 8, 3, 0.24);
+  background: white;
 }
 
 div.form-group {
@@ -13779,8 +13783,9 @@ div.form-group {
 .fa-edit {
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   background: red;
   color: white;
+  font-size: 30px;
 }
 

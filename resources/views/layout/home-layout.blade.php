@@ -13,8 +13,8 @@
         <header class="header text-center mx-auto">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2  mx-auto">
-                        <div class="site-heading mx-auto">
+                    <div class="col-lg-8   mx-auto">
+                        <div class="site-heading ">
                             <h1>Il Blog di Marko</h1>
                         </div>
                     </div>
@@ -25,29 +25,28 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2  mx-auto">
                     @yield('content')
+                    @if ($errors->any())
+
+                      <div class="alert alert-danger">
+                          <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                          </ul>
+                      </div>
+                      @endif
+                      @if (session('success'))
+                      <div class="alert alert-danger">
+                          <div class="container">
+                              {{ session('success') }}
+                          </div>
+                      </div>
+                      @endif
+                      <hr />
+                    </div>
                 </div>
             </div>
         </div>
-      @if ($errors->any())
-
-        <div class="alert alert-danger">
-            <ul>
-              @foreach ($errors->all() as $error)
-              <li>{{ $error }}</li>
-              @endforeach
-            </ul>
-        </div>
-        @endif
-        @if (session('success'))
-        <div class="alert alert-danger">
-            <div class="container">
-                {{ session('success') }}
-            </div>
-        </div>
-        @endif
-        <hr />
-      </div>
-
 
     </body>
 </html>
