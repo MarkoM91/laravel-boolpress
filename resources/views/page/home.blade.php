@@ -34,15 +34,15 @@
         <form id="author_search" action="{{ route('search') }}" method="get">
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" name="title" value="">
+                <input id="tit" type="text" name="title" value="">
             </div>
             <div class="form-group">
                 <label for="content">Content</label>
-                <input type="text" name="content" value="">
+                <input id="con"type="text" name="content" value="">
             </div>
             <div class="form-group">
-                <label for="category">Category</label>
-                <select class="" name="category">
+                <label  for="category">Category</label>
+                <select id="cat" class="" name="category">
                   <option value="">choose category</option>
                   @foreach ($categories as $category)
                     <option value="{{ $category->id }}">
@@ -52,8 +52,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="author">Author</label>
-                <select class="" name="author">
+                <label  for="author">Author</label>
+                <select id="aut" class="" name="author">
                   <option value="">choose category</option>
                   @foreach ($authors as $author)
                     <option value="{{ $author->id }}">

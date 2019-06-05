@@ -3,10 +3,11 @@
 
 
 
-      <div class="show">
+      <div class="show due">
         <h1>{{ $category -> name }}</h1>
 
         <table border="1">
+
           <thead>
             <td>TITLE</td>
             <td>CATEGORIES</td>

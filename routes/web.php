@@ -11,10 +11,18 @@
 |
 */
 
-Route::get('/', 'HomeController@getLast5posts')->name('home');
+Route::get('/', 'HomeControllerA@getLast5posts')->name('home');
 Route::get('category/{name}', 'CategoryController@getPostByCategoryName')->name('post.by.category');
 Route::get('admin/post/new', 'AdminController@createNewPost')->name('create.new.post');
 Route::post('admin/post/new', 'AdminController@saveNewPost')->name('save.new.post');
 Route::get('admin/post/edit/{id}', 'PostController@editPost')->name('edit.post');
 Route::patch('admin/post/edit/{id}', 'PostController@updatePost')->name('update.post');
 Route::get('/search', 'HomeController@search')->name('search');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

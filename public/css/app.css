@@ -13727,38 +13727,6 @@ header {
   text-align: center;
 }
 
-table {
-  margin: auto;
-  background: white;
-  border: 1px solid white;
-}
-
-table td {
-  border-bottom: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
-  padding: 0 40px;
-}
-
-table td a {
-  text-decoration: none;
-  color: black;
-}
-
-.show {
-  text-align: center;
-  margin-top: 100px;
-}
-
-#author_search {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 50px;
-  left: 100px;
-}
-
 #create_new_post {
   border-radius: 5px;
   padding: 15px;
@@ -13769,20 +13737,70 @@ table td a {
   color: white;
 }
 
-div.form-group {
-  margin: 10px;
+.show {
+  text-align: center;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  text-align: left;
 }
 
-.fa-edit {
+.show table {
+  margin: auto;
+  background: white;
+  border: 1px solid white;
+}
+
+.show table td {
+  border-bottom: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 0 40px;
+}
+
+.show table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.show table td a .fa-edit {
   height: 100%;
   width: 100%;
   padding: 10px;
   background: red;
   color: white;
   font-size: 30px;
+}
+
+.show table td #author_search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 75px;
+  left: 150px;
+}
+
+.show div.form-group {
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.show div.form-group #tit {
+  margin-left: 22px;
+}
+
+.show div.form-group #con {
+  margin-left: 5px;
+}
+
+.show div.form-group #cat {
+  margin-right: 25px;
+}
+
+.show div.form-group #aut {
+  margin-right: 22px;
 }
 

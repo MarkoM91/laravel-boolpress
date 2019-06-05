@@ -24,45 +24,6 @@ header {
     text-align: center;
 }
 
-table {
-
-margin: auto;
-background: white;
-border: 1px solid white;
-    td {
-
-      border-bottom:1px solid lightgrey;
-      border-right:1px solid lightgrey;
-      padding:0 40px;
-      a {
-
-        text-decoration: none;
-        color: black;
-      }
-    }
-}
-
-
-
-.show {
-
-    text-align: center;
-    margin-top: 100px;
-
-
-}
-
-#author_search {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 50px;
-    left: 100px;
-  }
-
 #create_new_post {
 
     border-radius: 5px;
@@ -74,28 +35,85 @@ border: 1px solid white;
     color: white;
 }
 
+.show {
+
+    text-align: center;
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-between;
+
+    table {
+
+    margin: auto;
+    background: white;
+    border: 1px solid white;
+
+        td {
+
+          border-bottom:1px solid lightgrey;
+          border-right:1px solid lightgrey;
+          padding:0 40px;
+
+          a {
+
+            text-decoration: none;
+            color: black;
+
+            .fa-edit {
+
+                height: 100%;
+                width: 100%;
+
+                padding: 10px;
+                background: red;
+                color: white;
+                font-size: 30px;
+            }
+          }
+
+          #author_search {
+
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              top: 75px;
+              left: 150px;
+            }
+        }
+    }
+
+    div.form-group {
+
+      margin-left: 30px;
+      display: flex;
+      justify-content:space-between;
+      align-items:center;
+      text-align: left;
 
 
-div.form-group {
 
-  margin: 10px;
+      #tit {
+        margin-left: 22px;
+      }
+
+      #con {
+        margin-left:5px;
+      }
+
+      #cat {
+        margin-right: 25px;
+      }
+      #aut {
+        margin-right: 22px;
+      }
+    }
+}
+
+.due {
   display: flex;
-  justify-content:space-between;
-  align-items:center;
-  text-align: left;
-}
-
-.fa-plus {
-
-}
-
-.fa-edit {
-
-    height: 100%;
-    width: 100%;
-
-    padding: 10px;
-    background: red;
-    color: white;
-    font-size: 30px;
+  flex-direction: column;
+  margin: auto;
 }
