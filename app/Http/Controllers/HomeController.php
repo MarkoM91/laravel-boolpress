@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\Request;
 use App\Post;
 use App\Category;
 use App\Author;
@@ -18,6 +17,11 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+    }
+
+    function index() {
+
+      return view('home');
     }
 
 

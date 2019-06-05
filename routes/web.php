@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeControllerA@getLast5posts')->name('home');
+Route::get('/', 'HomeController@getLast5posts')->name('home');
 Route::get('category/{name}', 'CategoryController@getPostByCategoryName')->name('post.by.category');
 Route::get('admin/post/new', 'AdminController@createNewPost')->name('create.new.post');
 Route::post('admin/post/new', 'AdminController@saveNewPost')->name('save.new.post');
