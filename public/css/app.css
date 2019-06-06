@@ -13846,3 +13846,23 @@ div.edit-content div.edit div #select {
   left: 40px;
 }
 
+div.edit-content div.edit div #cate {
+  position: relative;
+  left: 15px;
+}
+
+div.edit-content div.edit div #titl {
+  position: relative;
+  left: 56px;
+}
+
+div.edit-content div.edit div #conte {
+  position: relative;
+  left: 23px;
+}
+
+div.edit-content div.edit div #auth {
+  position: relative;
+  left: 48px;
+}
+

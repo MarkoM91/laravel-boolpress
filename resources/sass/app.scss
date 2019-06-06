@@ -125,10 +125,13 @@ header {
 
 
 div.edit-content {
+
   margin: auto;
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+
   div.edit {
+
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -138,18 +141,46 @@ flex-direction: column;
       margin: 10px;
 
       #input {
-      position: relative;
-      left: 50px;
+
+        position: relative;
+        left: 50px;
       }
+
       #input1 {
+
         position: relative;
         left: 20px;
       }
+
       #select {
+
         position: relative;
         left: 40px;
+      }
 
-    }
+      #cate {
+
+        position: relative;
+        left: 15px;
+      }
+
+      #titl {
+
+        position: relative;
+        left: 56px;
+      }
+
+      #conte {
+
+        position: relative;
+        left: 23px;
+      }
+
+      #auth {
+
+        position: relative;
+        left: 48px;
+      }
   }
 }
 

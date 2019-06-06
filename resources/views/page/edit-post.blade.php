@@ -10,19 +10,19 @@
           @method('PATCH')
           <div>
             <label for="author">CATEGORY</label>
-            <input type="text" name="category" value="{{ $post->category }}">
+            <input id="cate" type="text" name="category" value="{{ $post->category }}">
           </div>
           <div>
             <label for="title">TITLE</label>
-            <input type="text" name="title" value="{{ $post->title }}">
+            <input id="titl" type="text" name="title" value="{{ $post->title }}">
           </div>
           <div>
             <label for="content">CONTENT</label>
-            <input type="text" name="content" value="{{ $post->content }}">
+            <input id="conte" type="text" name="content" value="{{ $post->content }}">
           </div>
           <div>
             <label for="author_id">Author</label>
-            <select name="author_id">
+            <select id="auth" name="author_id">
               @foreach ($authors as $author)
                 <option value="{{$author->id}}">{{$author->username}}</option>
               @endforeach
