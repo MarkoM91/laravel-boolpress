@@ -13721,7 +13721,7 @@ a.text-dark:focus {
   padding: 0;
 }
 
-nav.navbar {
+.navbar {
   color: white;
   text-align: center;
 }
