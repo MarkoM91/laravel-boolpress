@@ -62,7 +62,7 @@
                   @endforeach
                 </select>
             </div>
-            <input type="submit" name="" value="SEARCH">
+            <input id="button" type="submit" name="" value="SEARCH">
           </form>
       </div>
 @stop

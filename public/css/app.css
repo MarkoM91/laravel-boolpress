@@ -13721,48 +13721,55 @@ a.text-dark:focus {
   padding: 0;
 }
 
-header {
-  background: #286bd6;
+nav.navbar {
   color: white;
   text-align: center;
 }
 
-#create_new_post {
+body {
+  background: rgba(5, 0, 5, 0.81);
+}
+
+main.py-4 {
+  height: 100%;
+}
+
+main.py-4 #create_new_post {
   border-radius: 5px;
   padding: 15px;
   position: relative;
   top: 70px;
-  left: 125px;
+  left: 85px;
   background: #078222;
   text-decoration: none;
   color: white;
 }
 
-.show {
+main.py-4 .show {
   text-align: center;
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
 }
 
-.show table {
+main.py-4 .show table {
   margin: auto;
   background: white;
   border: 1px solid white;
 }
 
-.show table td {
+main.py-4 .show table td {
   border-bottom: 1px solid lightgrey;
   border-right: 1px solid lightgrey;
   padding: 0 40px;
 }
 
-.show table td a {
+main.py-4 .show table td a {
   text-decoration: none;
   color: black;
 }
 
-.show table td a .fa-edit {
+main.py-4 .show table td a .fa-edit {
   height: 100%;
   width: 100%;
   border-radius: 8px;
@@ -13772,7 +13779,7 @@ header {
   font-size: 30px;
 }
 
-.show table td #author_search {
+main.py-4 .show table td #author_search {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13780,9 +13787,10 @@ header {
   position: relative;
   top: 75px;
   left: 150px;
+  color: white;
 }
 
-.show div.form-group {
+main.py-4 .show div.form-group {
   margin-left: 30px;
   display: flex;
   justify-content: space-between;
@@ -13790,79 +13798,85 @@ header {
   text-align: left;
   position: relative;
   right: 70px;
+  color: white;
 }
 
-.show div.form-group #tit {
+main.py-4 .show div.form-group #tit {
   margin-left: 22px;
 }
 
-.show div.form-group #con {
+main.py-4 .show div.form-group #con {
   margin-left: 5px;
 }
 
-.show div.form-group #cat {
+main.py-4 .show div.form-group #cat {
   margin-right: 25px;
   position: relative;
   right: 5px;
 }
 
-.show div.form-group #aut {
+main.py-4 .show div.form-group #aut {
   margin-right: 22px;
 }
 
-.due {
+main.py-4 .show div.form-group input#button {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+main.py-4 .due {
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 
-div.edit-content {
+main.py-4 div.edit-content {
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-div.edit-content div.edit {
+main.py-4 div.edit-content div.edit {
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-div.edit-content div.edit div {
+main.py-4 div.edit-content div.edit div {
   margin: 10px;
 }
 
-div.edit-content div.edit div #input {
+main.py-4 div.edit-content div.edit div #input {
   position: relative;
   left: 50px;
 }
 
-div.edit-content div.edit div #input1 {
+main.py-4 div.edit-content div.edit div #input1 {
   position: relative;
   left: 20px;
 }
 
-div.edit-content div.edit div #select {
+main.py-4 div.edit-content div.edit div #select {
   position: relative;
   left: 40px;
 }
 
-div.edit-content div.edit div #cate {
+main.py-4 div.edit-content div.edit div #cate {
   position: relative;
   left: 15px;
 }
 
-div.edit-content div.edit div #titl {
+main.py-4 div.edit-content div.edit div #titl {
   position: relative;
   left: 56px;
 }
 
-div.edit-content div.edit div #conte {
+main.py-4 div.edit-content div.edit div #conte {
   position: relative;
   left: 23px;
 }
 
-div.edit-content div.edit div #auth {
+main.py-4 div.edit-content div.edit div #auth {
   position: relative;
   left: 48px;
 }

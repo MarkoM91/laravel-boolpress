@@ -17,172 +17,189 @@
   padding: 0;
 }
 
-header {
+.navbar {
 
-    background: rgb(40, 107, 214);
     color: white;
     text-align: center;
 }
+body {
 
-#create_new_post {
-
-    border-radius: 5px;
-    padding: 15px;
-    position: relative;
-    top: 70px;
-    left: 125px;
-    background: rgb(7, 130, 34);
-    text-decoration: none;
-    color: white;
+  background: rgba(5, 0, 5, 0.81);
 }
 
-.show {
+main.py-4 {
 
-    text-align: center;
-    margin-top: 100px;
+  height: 100%;
 
-    display: flex;
-    justify-content: space-between;
+  #create_new_post {
 
-    table {
-
-    margin: auto;
-    background: white;
-    border: 1px solid white;
-
-        td {
-
-          border-bottom:1px solid lightgrey;
-          border-right:1px solid lightgrey;
-          padding:0 40px;
-
-          a {
-
-            text-decoration: none;
-            color: black;
-
-            .fa-edit {
-
-                height: 100%;
-                width: 100%;
-
-                border-radius: 8px;
-                padding: 10px;
-                background: orange;
-                color: white;
-                font-size: 30px;
-            }
-          }
-
-          #author_search {
-
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              position: relative;
-              top: 75px;
-              left: 150px;
-            }
-        }
-    }
-
-    div.form-group {
-
-      margin-left: 30px;
-      display: flex;
-      justify-content:space-between;
-      align-items:center;
-      text-align: left;
+      border-radius: 5px;
+      padding: 15px;
       position: relative;
-      right: 70px;
+      top: 70px;
+      left: 85px;
+      background: rgb(7, 130, 34);
+      text-decoration: none;
+      color: white;
+  }
 
+  .show {
 
+      text-align: center;
+      margin-top: 100px;
 
-      #tit {
-        margin-left: 22px;
+      display: flex;
+      justify-content: space-between;
+
+      table {
+
+      margin: auto;
+      background: white;
+      border: 1px solid white;
+
+          td {
+
+            border-bottom:1px solid lightgrey;
+            border-right:1px solid lightgrey;
+            padding:0 40px;
+
+            a {
+
+              text-decoration: none;
+              color: black;
+
+              .fa-edit {
+
+                  height: 100%;
+                  width: 100%;
+
+                  border-radius: 8px;
+                  padding: 10px;
+                  background: orange;
+                  color: white;
+                  font-size: 30px;
+              }
+            }
+
+            #author_search {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                position: relative;
+                top: 75px;
+                left: 150px;
+                color: white;
+              }
+          }
       }
 
-      #con {
-        margin-left:5px;
-      }
+      div.form-group {
 
-      #cat {
-        margin-right: 25px;
+        margin-left: 30px;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        text-align: left;
         position: relative;
-        right: 5px;
+        right: 70px;
+        color: white;
+
+
+
+        #tit {
+          margin-left: 22px;
+        }
+
+        #con {
+          margin-left:5px;
+        }
+
+        #cat {
+          margin-right: 25px;
+          position: relative;
+          right: 5px;
+        }
+
+        #aut {
+          margin-right: 22px;
+        }
+
+        input#button {
+
+          padding: 10px;
+          border-radius: 8px;
+        }
       }
-      #aut {
-        margin-right: 22px;
-      }
-    }
-}
+  }
 
-.due {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
+  .due {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
 
 
-div.edit-content {
-
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-
-  div.edit {
+  div.edit-content {
 
     margin: auto;
     display: flex;
     flex-direction: column;
 
-    div{
+    div.edit {
 
-      margin: 10px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
 
-      #input {
+      div{
 
-        position: relative;
-        left: 50px;
-      }
+        margin: 10px;
 
-      #input1 {
+        #input {
 
-        position: relative;
-        left: 20px;
-      }
+          position: relative;
+          left: 50px;
+        }
 
-      #select {
+        #input1 {
 
-        position: relative;
-        left: 40px;
-      }
+          position: relative;
+          left: 20px;
+        }
 
-      #cate {
+        #select {
 
-        position: relative;
-        left: 15px;
-      }
+          position: relative;
+          left: 40px;
+        }
 
-      #titl {
+        #cate {
 
-        position: relative;
-        left: 56px;
-      }
+          position: relative;
+          left: 15px;
+        }
 
-      #conte {
+        #titl {
 
-        position: relative;
-        left: 23px;
-      }
+          position: relative;
+          left: 56px;
+        }
 
-      #auth {
+        #conte {
 
-        position: relative;
-        left: 48px;
-      }
+          position: relative;
+          left: 23px;
+        }
+
+        #auth {
+
+          position: relative;
+          left: 48px;
+        }
+    }
   }
 }
-
 }

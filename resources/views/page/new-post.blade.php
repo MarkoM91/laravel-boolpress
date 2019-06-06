@@ -30,10 +30,10 @@
               <input type="checkbox" name="categories[]" value="{{ $category -> id }}">{{ $category -> name }}<br> <!-- mi ridà un array di categorie-->
             @endforeach
           </div>
-          <button type="submit" name="SAVE NEW CAR">SAVE NEW post</button>
+          <button id="button" type="submit" name="SAVE NEW CAR">SAVE NEW post</button>
         </form>
     </div>
   </div>
 
-  
+
 @stop

@@ -33,7 +33,7 @@
                 <input type="checkbox" name="categories[]" value="{{ $category->id }}">{{ $category->name }}<br>
               @endforeach
           </div>
-          <button type="submit" name="button">Update Post</button>
+          <button id="button" type="submit" name="button">Update Post</button>
         </form>
       </div>
 </div>
