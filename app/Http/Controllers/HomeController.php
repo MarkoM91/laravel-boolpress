@@ -40,33 +40,35 @@ class HomeController extends Controller
        return view('page.home', compact('posts', 'categories', 'authors'));
      }
 
-     function search(Request $request) {
+     
 
-       $title = $request -> title;
-       $content = $request -> content;
-       $category = $request -> category;
-       $author = $request -> author;
+       function search(Request $request) {
 
-       $query = Post::query();
+         $title = $request -> title;
+         $content = $request -> content;
+         $category = $request -> category;
+         $author = $request -> author;
 
-       if ($title) {
+         $query = Post::query();
 
-         $query = $query -> where('title', 'LIKE', '%'. $title. '%');
+         if ($title) {
+
+           $query = $query -> where('title', 'LIKE', '%'. $title. '%');
+         }
+         if ($content) {
+
+           $query = $query -> where('content', 'LIKE', '%'. $content. '%');
+         }
+         if ($author) {
+
+           $query = $query -> where('author_id',  $author);
+         }
+
+         $posts = $query -> get();
+
+         $categories = Category::all();
+         $authors = Author::all();
+
+         return view('page.home', compact('posts', 'categories', 'authors'));
        }
-       if ($content) {
-
-         $query = $query -> where('content', 'LIKE', '%'. $content. '%');
-       }
-       if ($author) {
-
-         $query = $query -> where('author_id',  $author);
-       }
-
-       $posts = $query -> get();
-
-       $categories = Category::all();
-       $authors = Author::all();
-
-       return view('layouts.app', compact('posts', 'categories', 'authors'));
-     }
 }

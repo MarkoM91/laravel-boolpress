@@ -13765,8 +13765,9 @@ header {
 .show table td a .fa-edit {
   height: 100%;
   width: 100%;
+  border-radius: 8px;
   padding: 10px;
-  background: red;
+  background: orange;
   color: white;
   font-size: 30px;
 }
