@@ -10,15 +10,15 @@
         @method('POST')
         <div>
           <label for="title">TITLE</label>
-          <input type="text" name="title" value="">
+          <input id="input" type="text" name="title" value="">
         </div>
         <div>
           <label for="content">CONTENT</label>
-          <input type="text" name="content" value="">
+          <input id="input1" type="text" name="content" value="">
         </div>
         <div>
           <label for="author_id">Author</label>
-          <select class="" name="author_id">
+          <select id="select" name="author_id">
             @foreach ($authors as $author)
               <option value="{{$author->id}}">{{$author->username}}</option>
             @endforeach

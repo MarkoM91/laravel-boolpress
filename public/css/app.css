@@ -13827,3 +13827,22 @@ main.py-4 div.edit {
   flex-direction: column;
 }
 
+main.py-4 div.edit div {
+  margin: 10px;
+}
+
+main.py-4 div.edit div #input {
+  position: relative;
+  left: 50px;
+}
+
+main.py-4 div.edit div #input1 {
+  position: relative;
+  left: 20px;
+}
+
+main.py-4 div.edit div #select {
+  position: relative;
+  left: 40px;
+}
+
