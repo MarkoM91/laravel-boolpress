@@ -13815,33 +13815,33 @@ header {
   margin: auto;
 }
 
-main.py-4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-main.py-4 div.edit {
+div.edit-content {
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-main.py-4 div.edit div {
+div.edit-content div.edit {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+div.edit-content div.edit div {
   margin: 10px;
 }
 
-main.py-4 div.edit div #input {
+div.edit-content div.edit div #input {
   position: relative;
   left: 50px;
 }
 
-main.py-4 div.edit div #input1 {
+div.edit-content div.edit div #input1 {
   position: relative;
   left: 20px;
 }
 
-main.py-4 div.edit div #select {
+div.edit-content div.edit div #select {
   position: relative;
   left: 40px;
 }

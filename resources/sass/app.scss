@@ -123,11 +123,11 @@ header {
   margin: auto;
 }
 
-main.py-4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
+div.edit-content {
+  margin: auto;
+display: flex;
+flex-direction: column;
   div.edit {
     margin: auto;
     display: flex;
@@ -148,7 +148,9 @@ main.py-4 {
       #select {
         position: relative;
         left: 40px;
-      }
+
     }
   }
+}
+
 }
