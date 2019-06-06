@@ -108,6 +108,8 @@ header {
 
       #cat {
         margin-right: 25px;
+        position: relative;
+        right: 5px;
       }
       #aut {
         margin-right: 22px;
@@ -119,4 +121,15 @@ header {
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+main.py-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div.edit {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }

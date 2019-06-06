@@ -13732,7 +13732,7 @@ header {
   padding: 15px;
   position: relative;
   top: 70px;
-  left: 150px;
+  left: 125px;
   background: #078222;
   text-decoration: none;
   color: white;
@@ -13801,6 +13801,8 @@ header {
 
 .show div.form-group #cat {
   margin-right: 25px;
+  position: relative;
+  right: 5px;
 }
 
 .show div.form-group #aut {
@@ -13811,5 +13813,17 @@ header {
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+main.py-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main.py-4 div.edit {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
