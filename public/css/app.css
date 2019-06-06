@@ -13732,6 +13732,7 @@ header {
   padding: 15px;
   position: relative;
   top: 70px;
+  left: 150px;
   background: #078222;
   text-decoration: none;
   color: white;
@@ -13786,6 +13787,8 @@ header {
   justify-content: space-between;
   align-items: center;
   text-align: left;
+  position: relative;
+  right: 70px;
 }
 
 .show div.form-group #tit {
@@ -13802,5 +13805,11 @@ header {
 
 .show div.form-group #aut {
   margin-right: 22px;
+}
+
+.due {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 

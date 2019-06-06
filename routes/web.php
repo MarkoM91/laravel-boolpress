@@ -21,8 +21,9 @@ Route::get('/search', 'HomeController@search')->name('search');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@getLogin')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@getLogin')->name('home');
+Route::get('/home', 'HomeController@getLoggedOut')->name('logged');

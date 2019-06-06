@@ -19,10 +19,16 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
-    function index() {
+    function getLogin() {
 
       return view('home');
     }
+
+    public function getLogout()
+{
+    \Auth::logout();
+    return view('/');
+}
 
 
      function getLast5Posts() {
@@ -61,6 +67,6 @@ class HomeController extends Controller
        $categories = Category::all();
        $authors = Author::all();
 
-       return view('page.home', compact('posts', 'categories', 'authors'));
+       return view('layouts.app', compact('posts', 'categories', 'authors'));
      }
 }
