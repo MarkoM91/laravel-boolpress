@@ -22,9 +22,18 @@ class HomeController extends Controller
     function getLogin() {
 
       return view('home');
+      
+      setTimeout(function() {
+
+        $categories = Category::all();
+        $authors = Author::all();
+        $posts = Post::OrderByDesc('updated_at')->take(5)->get();
+
+        return view('page.home', compact('posts', 'categories', 'authors'));
+      }, 2000);
     }
 
-  
+
 
 
      function getLast5Posts() {

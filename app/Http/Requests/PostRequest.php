@@ -26,6 +26,7 @@ class PostRequest extends FormRequest
         return [
           'title' => 'required',
           'content' => 'required',
+          'likes' => 'required|alpha_num',
           'categories' => 'required',
           'author_id' => 'required|alpha_num'
         ];
