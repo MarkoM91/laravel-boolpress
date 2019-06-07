@@ -24,11 +24,7 @@ class HomeController extends Controller
       return view('home');
     }
 
-    public function getLogout()
-{
-    \Auth::logout();
-    return view('/');
-}
+  
 
 
      function getLast5Posts() {
@@ -40,7 +36,7 @@ class HomeController extends Controller
        return view('page.home', compact('posts', 'categories', 'authors'));
      }
 
-     
+
 
        function search(Request $request) {
 

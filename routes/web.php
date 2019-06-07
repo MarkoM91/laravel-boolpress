@@ -26,4 +26,3 @@ Route::get('/home', 'HomeController@getLogin')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@getLogin')->name('home');
-Route::get('/home', 'HomeController@getLoggedOut')->name('logged');
